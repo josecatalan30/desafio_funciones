@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores teclado</title>
+</head>
+<body style="display: flex;">
+    <header>
+        <a href="./index.html">Ejercicio 1</a>
+        <a href="./4_colores.html">Ejercicio 2</a>
+        <a href="./colores_teclado.html">Ejercicio 3</a>
+    </header>
+        <div id="azul" style="width: 200px; height: 200px; background-color: blue;"></div>
+    <div id="rojo" style="width: 200px; height: 200px; background-color: red;"></div>
+    <div id="verde" style="width: 200px; height: 200px; background-color: green;"></div>
+    <div id="amarillo" style="width: 200px; height: 200px; background-color: yellow;"></div>
+<script>
+    elementos = document.querySelectorAll('#azul, #rojo, #verde, #amarillo');
+
+  elementos.forEach(ele => {
+    ele.addEventListener('click', () => {
+      ele.style.backgroundColor = 'black';
+    });
+  });
+</script>
+</body>
+</html>
